@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portable Plan - dani234t34</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #1a1a2e;
+      color: #eee;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #16213e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #0f3460;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #e94560;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    nav {
+      background-color: #0f3460;
+      padding: 10px 20px;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: #e94560; }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    .hero .label {
+      display: inline-block;
+      background: #e94560;
+      color: white;
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 span {
+      color: #e94560;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 15px;
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .section {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .section h3 {
+      font-size: 18px;
+      color: #e94560;
+      margin-bottom: 16px;
+      border-left: 4px solid #e94560;
+      padding-left: 10px;
+    }
+
+    .how-block {
+      background: #16213e;
+      border: 1px solid #0f3460;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .how-block .num {
+      background: #e94560;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .how-block .content h4 {
+      font-size: 15px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    .how-block .content p {
+      font-size: 13px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .tech-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .tech-pill {
+      background: #0f3460;
+      border: 1px solid #1a4a8a;
+      color: #bbd;
+      font-size: 13px;
+      padding: 5px 14px;
+      border-radius: 20px;
+    }
+
+    .quote-box {
+      background: #16213e;
+      border-left: 4px solid #e94560;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+      font-size: 14px;
+      color: #bbb;
+      line-height: 1.8;
+      font-style: italic;
+      max-width: 700px;
+      margin: 30px auto;
+    }
+
+    .quote-box span {
+      display: block;
+      margin-top: 10px;
+      font-style: normal;
+      color: #e94560;
+      font-size: 13px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .feature-card {
+      background: #16213e;
+      border: 1px solid #0f3460;
+      border-radius: 8px;
+      padding: 14px 16px;
+      flex: 1 1 180px;
+    }
+
+    .feature-card .icon {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .feature-card h4 {
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    .feature-card p {
+      font-size: 12px;
+      color: #888;
+      line-height: 1.5;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 10px;
+      padding-left: 20px;
+      border-left: 2px solid #0f3460;
+    }
+
+    .timeline-item {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #e94560;
+      border-radius: 50%;
+      position: absolute;
+      left: -26px;
+      top: 4px;
+    }
+
+    .timeline-item .date {
+      font-size: 11px;
+      color: #e94560;
+      margin-bottom: 3px;
+    }
+
+    .timeline-item h4 {
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 3px;
+    }
+
+    .timeline-item p {
+      font-size: 13px;
+      color: #888;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #555;
+      border-top: 1px solid #0f3460;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #e94560;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>dani234t34.github.io</h1>
+    <p>my game projects and stuff i make</p>
+  </header>
+
+  <nav>
+    <a href="index.html">home</a>
+    <a href="#">projects</a>
+    <a href="#">about</a>
+    <a href="#">contact</a>
+  </nav>
+
+  <div class="hero">
+    <div class="label">featured project</div>
+    <h2>dani234t34 <span>Portable Plan</span></h2>
+    <p>a plan i built completely from scratch using programming. no templates, no tutorials for this one — i figured most of it out myself and put it all together over time.</p>
+  </div>
+
+  <!-- How he built it -->
+  <div class="section">
+    <h3>how i built it</h3>
+
+    <div class="how-block">
+      <div class="num">1</div>
+      <div class="content">
+        <h4>started with the idea</h4>
+        <p>i wanted something i could carry around and use anywhere without installing stuff. so i decided to build it to run straight from a browser or a simple file. kept it lightweight on purpose.</p>
+      </div>
+    </div>
+
+    <div class="how-block">
+      <div class="num">2</div>
+      <div class="content">
+        <h4>wrote the core logic from scratch</h4>
+        <p>the main system is all code i wrote myself. i used javascript for the logic because it runs anywhere. took a while to get it working right but i kept going back and fixing stuff.</p>
+      </div>
+    </div>
+
+    <div class="how-block">
+      <div class="num">3</div>
+      <div class="content">
+        <h4>built the layout by hand</h4>
+        <p>no frameworks, just html and css. i wrote every element manually and styled it to look clean. made a lot of mistakes but learned a ton doing it this way.</p>
+      </div>
+    </div>
+
+    <div class="how-block">
+      <div class="num">4</div>
+      <div class="content">
+        <h4>tested and fixed bugs</h4>
+        <p>there were so many bugs lol. i kept running it and breaking things, then fixing them. eventually got it to a point where it actually works the way i wanted.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tech used -->
+  <div class="section">
+    <h3>tech i used</h3>
+    <div class="tech-grid">
+      <span class="tech-pill">HTML</span>
+      <span class="tech-pill">CSS</span>
+      <span class="tech-pill">JavaScript</span>
+      <span class="tech-pill">JSON</span>
+      <span class="tech-pill">GitHub Pages</span>
+      <span class="tech-pill">VS Code</span>
+      <span class="tech-pill">Chrome DevTools</span>
+    </div>
+  </div>
+
+  <!-- Quote -->
+  <div class="quote-box">
+    "i built this whole thing myself. it wasnt easy and i definitely googled a lot but every line of code in here is something i actually understand now. thats the part im most proud of."
+    <span>— dani234t34</span>
+  </div>
+
+  <!-- Features -->
+  <div class="section">
+    <h3>what it does</h3>
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">&#128190;</div>
+        <h4>runs anywhere</h4>
+        <p>works in any browser, no install needed. just open the file and go.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">&#128736;</div>
+        <h4>built with code</h4>
+        <p>100% hand-written. no drag and drop builders or pre-made templates used.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">&#128640;</div>
+        <h4>still updating</h4>
+        <p>im still adding features and fixing things. its a work in progress like most of my stuff.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">&#128218;</div>
+        <h4>open on github</h4>
+        <p>you can see all the code on my github if you want to look at how it works.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Build timeline -->
+  <div class="section">
+    <h3>build timeline</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">week 1</div>
+        <h4>came up with the idea</h4>
+        <p>drew out what i wanted it to look like on paper and figured out what programming i'd need to learn.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">week 2</div>
+        <h4>started coding</h4>
+        <p>wrote the basic html structure and started the javascript logic. broke everything multiple times.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">week 3</div>
+        <h4>got the main stuff working</h4>
+        <p>the core logic finally worked. added css styling and made it look way better than the ugly version lol.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">week 4</div>
+        <h4>bug fixes and launch</h4>
+        <p>fixed a bunch of bugs, cleaned up the code, and pushed it to github pages. still updating it now.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="index.html">&larr; back to home</a> &nbsp;&mdash;&nbsp; made by dani234t34
+  </footer>
+
+</body>
+</html>
