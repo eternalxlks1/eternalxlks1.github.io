@@ -1,231 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>dani234t34's games</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-    body {
-      background-color: #1a1a2e;
-      color: #eee;
-      font-family: Arial, sans-serif;
-    }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-    header {
-      background-color: #16213e;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 3px solid #0f3460;
-    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
 
-    header h1 {
-      font-size: 28px;
-      color: #e94560;
-    }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    header p {
-      color: #aaa;
-      font-size: 14px;
-      margin-top: 5px;
-    }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-    nav {
-      background-color: #0f3460;
-      padding: 10px 20px;
-      display: flex;
-      gap: 15px;
-    }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    nav a {
-      color: #eee;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #e94560;
-    }
-
-    .hero {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      color: #bbb;
-      font-size: 14px;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .projects-title {
-      text-align: center;
-      font-size: 20px;
-      margin: 20px 0 10px;
-      color: #e94560;
-    }
-
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 20px;
-      justify-content: center;
-    }
-
-    .card {
-      background-color: #16213e;
-      border: 1px solid #0f3460;
-      border-radius: 8px;
-      width: 260px;
-      padding: 15px;
-    }
-
-    .card .tag {
-      display: inline-block;
-      background-color: #0f3460;
-      color: #aaa;
-      font-size: 11px;
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-bottom: 8px;
-    }
-
-    .card h3 {
-      font-size: 17px;
-      margin-bottom: 6px;
-      color: #fff;
-    }
-
-    .card p {
-      font-size: 13px;
-      color: #aaa;
-      margin-bottom: 12px;
-      line-height: 1.5;
-    }
-
-    .card a {
-      display: inline-block;
-      background-color: #e94560;
-      color: #fff;
-      text-decoration: none;
-      padding: 6px 14px;
-      border-radius: 5px;
-      font-size: 13px;
-    }
-
-    .card a:hover {
-      background-color: #c73652;
-    }
-
-    .badge {
-      float: right;
-      font-size: 10px;
-      background: #e94560;
-      color: white;
-      padding: 2px 6px;
-      border-radius: 4px;
-      margin-top: 2px;
-    }
-
-    .about {
-      max-width: 600px;
-      margin: 30px auto;
-      padding: 20px;
-      background: #16213e;
-      border-left: 4px solid #e94560;
-      border-radius: 4px;
-      font-size: 14px;
-      color: #bbb;
-      line-height: 1.7;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 12px;
-      color: #555;
-      border-top: 1px solid #0f3460;
-      margin-top: 40px;
-    }
-  </style>
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome.</h1>
+        <p>My basic website. Nothing more.</p>
+    </header>
 
-  <header>
-    <h1>dani234t34.github.io</h1>
-    <p>my game projects and stuff i make</p>
-  </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <nav>
-    <a href="#">home</a>
-    <a href="#">projects</a>
-    <a href="#">about</a>
-    <a href="#">contact</a>
-  </nav>
-
-  <div class="hero">
-    <h2>welcome to my site!!</h2>
-    <p>hey im dani, i make games in my free time. still learning but having fun with it. check out my projects below</p>
+    <div class="container">
+        <h2>My Projects.</h2>
+        <p>Now, I'm going to run through my projects.
+        </p>
+       <h2><span style="color:#FF0000">2</span><span style="color:#FF8B00">D</span><span style="color:#E8FF00">-</span><span style="color:#5DFF00">F</span><span style="color:#00FF2E">o</span><span style="color:#00FFB9">r</span><span style="color:#00B9FF">t</span><span style="color:#002EFF">n</span><span style="color:#5D00FF">i</span><span style="color:#E800FF">t</span><span style="color:#FF008B">e</span></h2>
+       <p><a href="https://infinitexlks.github.io/2D-Fortnite/">2D Fortnite!</a></p>
+    </div>
+  <div class="container">
+      <h2><span style="color:#FF0000">2</span><span style="color:#FF8B00">D</span> <span style="color:#E8FF00">M</span><span style="color:#5DFF00">i</span><span style="color:#00FF2E">n</span><span style="color:#00FFB9">e</span><span style="color:#00B9FF">c</span><span style="color:#002EFF">r</span><span style="color:#5D00FF">a</span><span style="color:#E800FF">f</span><span style="color:#FF008B">t</span></h2>
+       <p><a href="https://infinitexlks.github.io/2D-Minecraft/">2D Minecraft</a></p>
   </div>
-
-  <h2 class="projects-title">my projects</h2>
-
-  <div class="projects">
-
-    <div class="card">
-      <span class="tag">2D</span>
-      <span class="badge">NEW</span>
-      <h3>2D Fortnite</h3>
-      <p>a 2d version of fortnite i made. you can move around, build walls and shoot. still adding stuff to it</p>
-      <a href="#">play now</a>
+      <div class="container">
+          <h2><span style="color:#FF0000">H</span><span style="color:#FF8000">a</span><span style="color:#FFFF00">c</span><span style="color:#80FF00">k</span> <span style="color:#00FF00">D</span><span style="color:#00FF80">e</span><span style="color:#00FFFF">t</span><span style="color:#007FFF">e</span><span style="color:#0000FF">c</span><span style="color:#7F00FF">t</span><span style="color:#FF00FF">o</span><span style="color:#FF0080">r</span></h2>
+         <p><a href="https://infinitexlks.github.io/Hack-Detector/">Hack Deterctor</a></p>
+      </div>
+    <div class="container">
+        <h2><span style="color:#FF0000">M</span><span style="color:#FF7600">u</span><span style="color:#FFEB00">s</span><span style="color:#9DFF00">i</span><span style="color:#27FF00">c</span><span style="color:#00FF4E">a</span><span style="color:#00FFC4">l</span> <span style="color:#00C4FF">E</span><span style="color:#004EFF">n</span><span style="color:#2700FF">g</span><span style="color:#9D00FF">i</span><span style="color:#FF00EB">n</span><span style="color:#FF0076">e</span></h2>
+   <p><a href="https://infinitexlks.github.io/musical-engine/">Musical Engine.</a></p>
     </div>
-
-    <div class="card">
-      <span class="tag">3D</span>
-      <h3>BlockWorld 3D</h3>
-      <p>a small 3d world where you can walk around and place blocks. kind of like minecraft but way simpler lol</p>
-      <a href="#">play now</a>
+    <div class="container">
+        <h2><span style="color:#FF0000">I</span><span style="color:#FF6000">n</span><span style="color:#FFBF00">f</span><span style="color:#DFFF00">i</span><span style="color:#80FF00">n</span><span style="color:#20FF00">i</span><span style="color:#00FF40">t</span><span style="color:#00FF9F">e</span><span style="color:#00FFFF">-</span><span style="color:#009FFF">B</span><span style="color:#0040FF">r</span><span style="color:#2000FF">o</span><span style="color:#7F00FF">w</span><span style="color:#DF00FF">s</span><span style="color:#FF00BF">e</span><span style="color:#FF0060">r</span></h2>
+         <p><a href="https://infinitexlks.github.io/Infinite-Browser/">My Basic Browser</a></p>
     </div>
-
-    <div class="card">
-      <span class="tag">3D</span>
-      <h3>Space Shooter 3D</h3>
-      <p>fly a spaceship and shoot asteroids. 3d game with basic enemies. made this in a weekend</p>
-      <a href="#">play now</a>
+    <div class="container">
+        <h2><span style="color:#FF0000">S</span><span style="color:#FF5500">o</span><span style="color:#FFAA00">l</span><span style="color:#FFFF00">i</span><span style="color:#AAFF00">d</span><span style="color:#55FF00">-</span><span style="color:#00FF00">O</span><span style="color:#00FF55">c</span><span style="color:#00FFAA">t</span><span style="color:#00FFFF">o</span><span style="color:#00AAFF">-</span><span style="color:#0055FF">T</span><span style="color:#0000FF">r</span><span style="color:#5500FF">i</span><span style="color:#AA00FF">b</span><span style="color:#FF00FF">b</span><span style="color:#FF00AA">l</span><span style="color:#FF0055">e</span></h2>
+        <p><a href="https://infinitexlks.github.io/Solid-Octo-Tribble/">Solid Octo Tribble</p>
     </div>
-
-    <div class="card">
-      <span class="tag">2D</span>
-      <h3>Zombie Runner</h3>
-      <p>run from zombies, dodge obstacles and try to survive as long as possible. 2d sidescroller</p>
-      <a href="#">play now</a>
+    <div class="container">
+        <h2><span style="color:#FF0000">R</span><span style="color:#FF8000">e</span><span style="color:#FFFF00">s</span><span style="color:#80FF00">t</span> <span style="color:#00FF00">A</span><span style="color:#00FF80">P</span><span style="color:#00FFFF">I</span> <span style="color:#007FFF">F</span><span style="color:#0000FF">l</span><span style="color:#7F00FF">a</span><span style="color:#FF00FF">s</span><span style="color:#FF0080">k</span></h2>
+        <p><a href="https://github.com/dani234t34/hi/">hi.</p>
     </div>
-
-    <div class="card">
-      <span class="tag">3D</span>
-      <h3>Racing Game (WIP)</h3>
-      <p>still working on this one. gonna be a 3d racing game with different tracks. check back later</p>
-      <a href="#" style="background:#555;">coming soon</a>
+    <div class="container">
+        <h2><span style="color:#FF0000">C</span><span style="color:#FF7600">I</span><span style="color:#FFEB00">F</span><span style="color:#9DFF00">A</span><span style="color:#27FF00">R</span><span style="color:#00FF4E">-</span><span style="color:#00FFC4">1</span><span style="color:#00C4FF">0</span> <span style="color:#004EFF">I</span><span style="color:#2700FF">m</span><span style="color:#9D00FF">a</span><span style="color:#FF00EB">g</span><span style="color:#FF0076">e</span> </h2>
+        <p><a href="https://github.com/dani234t34/2D-Minecraft/">\Minecraft 2Dr</p>
     </div>
-
-  </div>
-
-  <div class="about">
-    <strong style="color:#eee;">about me</strong><br><br>
-    im just a person who likes making games. i use a bunch of different engines and tools and im still learning. most of these games are unfinished but i try to upload what i have. feel free to look around :)
-  </div>
-
-  <footer>
-    made by dani234t34 &mdash; dani234t34.github.io
-  </footer>
-
+    <div class="container">
+        <h2><span style="color:#FF0000">R</span><span style="color:#FFAA00">e</span><span style="color:#AAFF00">s</span><span style="color:#00FF00">o</span><span style="color:#00FFAA">u</span><span style="color:#00AAFF">r</span><span style="color:#0000FF">c</span><span style="color:#AA00FF">e</span><span style="color:#FF00AA">s</span></h2>
+        <p><a href="https://www.w3schools.com/">W3 Schools</p>
+    </div>
 </body>
 </html>
